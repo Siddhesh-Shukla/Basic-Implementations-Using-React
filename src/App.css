@@ -1,38 +1,123 @@
-.App {
+body {
+  background: hsl(207, 53%, 93%);
+  font-size: 0.9rem;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px hsl(205, 25%, 77%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.para {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputSearch {
+  text-align: center;
+  font-size: 1rem;
+  background: hsl(207, 53%, 93%);
+  border-color: transparent;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/*------------------------------------------------------------*/
+.form {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+}
+
+.form label {
+  text-align: left;
+  flex: 2;
+}
+
+.form input {
+  background: hsl(207, 53%, 93%);
+  border-color: transparent;
+  padding: 0.35rem 0.5rem;
+  max-width: 100%;
+  flex: 1;
+}
+
+.form-control {
+  margin: 0.5rem 0;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .form-control {
+    grid-template-columns: 100px 1fr;
+  }
+}
+
+/*------------------------------------------------------------*/
+.list {
+  background: hsl(207, 53%, 93%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.list h4,
+.list p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.list h4 {
+  margin-left: 15px;
+}
+
+/*------------------------------------------------------------*/
+.btn {
+  display: inline-block;
+  background: rgb(12, 160, 128);
   color: white;
+  border-color: transparent;
+  width: 100px;
+  letter-spacing: 1px;
+  padding: 0.15rem 0.25rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-edit {
+  background: transparent;
+  color: rgb(12, 160, 128);
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-remove {
+  background: transparent;
+  color: red;
+  width: auto;
+}
+
+.btn-classic:hover {
+  background: rgb(9, 133, 106);
+}
+
+.btn-edit:hover {
+  color: rgb(9, 133, 106);
+}
+
+.btn-remove:hover {
+  color: tomato;
 }
